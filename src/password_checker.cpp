@@ -20,6 +20,7 @@ password_checker::password_checker(const char* path)
     group_needs_authorization = false;
     user_needs_authorization = false;
   }
+  user = NULL;
 }
 
 password_checker::~password_checker()
