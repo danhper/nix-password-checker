@@ -5,6 +5,7 @@ class password_checker
 {
 public:
   password_checker(const char* path);
+  ~password_checker();
   bool is_group_authorized(const char* group_name);
 
 private:
