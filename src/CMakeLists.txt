@@ -16,4 +16,4 @@ endif()
 set(nix-password-checker_source_files main.cpp password_checker.cpp)
 add_executable(nix-password-checker ${nix-password-checker_source_files})
 
-target_link_libraries(nix-password-checker config++)
+target_link_libraries(nix-password-checker config++ crypt)
