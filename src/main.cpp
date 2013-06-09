@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
   }
 
   if(getuid() != 0) {
-    printf("this program must be run as root\n");
+    printf("this program must be ran as root\n");
     return 8;
   }
 
