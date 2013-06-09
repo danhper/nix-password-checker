@@ -19,8 +19,8 @@ void password_checker::generate_authorized_groups(const Config& config)
       throw new ConfigException();
     } else {
       for(int i = 0; i < auth_groups.getLength(); i++) {
-        printf("%s\n", auth_groups[i].c_str());
         authorized_groups.insert(auth_groups[i].c_str());
+        printf("%s\n", *authorized_groups.begin());
       }
     }
     group_needs_authorization = true;
